@@ -23,7 +23,7 @@
     </properties>
 
     <name>com.raitonbl.keycloak.captcha</name>
-    <url>https://github.com/Delfimarime/keycloak</url>
+    <url>https://github.com/raitonbl/keycloak</url>
 
     <organization>
         <name>RaitonBL</name>
@@ -42,7 +42,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/Delfimarime/keycloak</url>
+            <url>https://maven.pkg.github.com/raitonbl/keycloak</url>
         </repository>
     </distributionManagement>
 

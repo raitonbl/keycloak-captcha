@@ -1,0 +1,22 @@
+# keycloak captcha api
+Intended to extend [Keycloak](https://www.keycloak.org/) features through a standard api which abstract the captcha vendor.
+This project enables:
+* Captcha api abstraction - Making it possible to design captcha dependent features without vendor locking. This api needs to be deployed on [Keycloak](https://www.keycloak.org/) whenever a Captcha vendor is to be deployed.  
+
+## Building
+
+Ensure you have JDK 8 (or newer), Maven 3.5.4 (or newer) and Git installed
+
+    java -version
+    mvn -version
+    git --version
+
+How to build:
+
+    mvn clean package
+
+# Deployment    
+
+In order to deploy the api , Keycloak must be stopped and the generated jar should be deployed on **KEYCLOAK_HOME/providers/** (for containers) or on **KEYCLOAK_HOME/standalone/deployments/**.
+Start **Keycloak** , [More details](https://www.keycloak.org/documentation.html)
+

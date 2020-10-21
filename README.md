@@ -15,8 +15,20 @@ How to build:
 
     mvn clean package
 
-# Deployment    
+## How to use?
+In order to develop a vendor implementation , the implementation must define the bellow on the pom:
+
+```XML
+  <dependency>
+     <groupId>com.raitonbl</groupId>
+       <artifactId>keycloak.captcha</artifactId>
+       <version>1.0.0-RELEASE</version>
+   </dependency>
+```
+
+## Deployment    
 
 In order to deploy the api , Keycloak must be stopped and the generated jar should be deployed on **KEYCLOAK_HOME/providers/** (for containers) or on **KEYCLOAK_HOME/standalone/deployments/**.
+
 Start **Keycloak** , [More details](https://www.keycloak.org/documentation.html)
 
